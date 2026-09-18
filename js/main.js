@@ -1,9 +1,9 @@
 const products = {
   coins: [
-    { id: "coins-500", tag: "coins", rank: "", name: "500 Coinů", amount: null, description: "Pro začátek — vozidlo, drogy nebo dům, jen co se uskutečníte.", price: "5 €" },
-    { id: "coins-1200", tag: "coins", rank: "Nejoblíbenější", name: "1 200 Coinů", amount: null, description: "Oblíbený balíček s bonusem +10 % coinů navíc.", price: "10 €" },
-    { id: "coins-3000", tag: "coins", rank: "", name: "3 000 Coinů", amount: null, description: "Bonus +20 % — luxusní střecha, supersport a nitro.", price: "25 €" },
-    { id: "coins-6500", tag: "coins", rank: "Nejlepší hodnota", name: "6 500 Coinů", amount: null, description: "Bonus +30 % pro náročné hráče. Vlastní firma na dosah.", price: "50 €" }
+    { id: "coins-500", tag: "coins", rank: "", name: "Balíček základ", pieces: 500, description: "Pro začátek — vozidlo, drogy nebo dům, jen co se uskutečníte.", price: "5 €" },
+    { id: "coins-1200", tag: "coins", rank: "Nejoblíbenější", name: "Balíček JUNIOR", pieces: 1200, description: "Oblíbený balíček s bonusem +10 % coinů navíc.", price: "10 €" },
+    { id: "coins-3000", tag: "coins", rank: "", name: "Balíček MASTER", pieces: 3000, description: "Bonus +20 % — luxusní střecha, supersport a nitro.", price: "25 €" },
+    { id: "coins-6500", tag: "coins", rank: "Nejlepší hodnota", name: "Balíček LEGEND", pieces: 6500, description: "Bonus +30 % pro náročné hráče. Vlastní firma na dosah.", price: "50 €" }
   ],
   vip: [
     { id: "vip-1", tag: "rank", rank: "VIP", name: "VIP", amount: "30 dní", description: "VIP značka u vozidel, +1 spawnovací místnost, priorita ve frontě.", price: "6 €" },
@@ -39,7 +39,7 @@ function createCard(p, icon) {
 
   const name = document.createElement("h3");
   name.className = "product-name";
-  name.textContent = icon + " " + p.name;
+  name.textContent = p.name;
 
   const desc = document.createElement("p");
   desc.className = "product-desc";
@@ -47,10 +47,13 @@ function createCard(p, icon) {
 
   const amount = document.createElement("div");
   amount.className = "product-amount";
-  if (p.amount) {
+  if (p.tag === "rank") {
     amount.textContent = p.amount;
   } else {
-    amount.innerHTML = "<small>herní měna</small>";
+    amount.innerHTML =
+      '<span class="coin-mark">🪙</span><span class="coin-count">' +
+      p.pieces.toLocaleString("cs-CZ") +
+      "</span> <small class=\"coin-label\">Coinů</small>";
   }
 
   const price = document.createElement("div");
