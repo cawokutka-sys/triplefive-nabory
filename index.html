@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripleFive Nábory | A-T Přihláška a Roleplay Server</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="#domov" class="logo">
+                <span class="logo-badge">TF</span>
+                <span class="logo-text">TripleFive<span>RP</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#domov">Domů</a>
+                <a href="#o-nas">O nás</a>
+                <a href="#nabory">Nábory</a>
+                <a href="#shop">VIP &amp; Coiny</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
+            <a href="#shop" class="btn btn-primary nav-cta">Koupit VIP</a>
+        </div>
+    </header>
+
+    <section id="domov" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow">Český GTA V Roleplay</p>
+            <h1 class="hero-title">TRIPLE<span class="grad">FIVE</span> RP</h1>
+            <p class="hero-subtitle">
+                Ponořte se do života města plného frakcí a příběhů.
+                Staňte se členem A-T, rozjeďte podnikání nebo si to jednoduše užijte.
+            </p>
+            <div class="hero-actions">
+                <a href="#nabory" class="btn btn-primary btn-lg">Vstupte do A-T</a>
+                <a href="#shop" class="btn btn-outline btn-lg">Obchod s coinami</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat"><span class="stat-num" data-count="0">0</span><span class="stat-label">Hráčů</span></div>
+            <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Členů A-T</span></div>
+            <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">Odehrané hodiny</span></div>
+        </div>
+    </section>
+
+    <section id="o-nas" class="section">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-eyebrow">O nás</p>
+                <h2 class="section-title">Co je TripleFive RP?</h2>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎭</div>
+                    <h3>Kvalitní Roleplay</h3>
+                    <p>Seriózní RP prostředí s aktivní komunitou moderátorů, kteří se starají o fair play a zábavu.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🚔</div>
+                    <h3>Aktivní frakce</h3>
+                    <p>Státní i nestátní frakce – policie, hasiči, gangy, firmy. Nábor do A-T probíhá průběžně.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💎</div>
+                    <h3>VIP a coiny</h3>
+                    <p>Podpořte server a získejte VIP benefity a coiny na nákup vozidel, domů a drog ve hře.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Bezpečné prostředí</h3>
+                    <p>Anticheat, 24/7 server a aktivní support tým na discordu, který vám vždy pomůže.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nabory" class="section section-dark section-nabory">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-eyebrow">Náborový proces</p>
+                <h2 class="section-title">Nábor do A-T</h2>
+                <p class="section-sub">
+                    Chcete se stát členem Administrativního Týmu (A-T) a pomáhat nám budovat komunitu?
+                    Vyplňte přihlášku a my vás budeme kontaktovat.
+                </p>
+            </div>
+
+            <div class="recruit-grid">
+                <aside class="recruit-info">
+                    <h3>Podmínky pro A-T</h3>
+                    <ul class="checklist">
+                        <li>Minimální věk <b>16 let</b></li>
+                        <li>Aktivní alespoň <b>3 hodiny denně</b></li>
+                        <li>Bez banů na TripleFive RP</li>
+                        <li>Ovladání češtiny (písemně i ústně)</li>
+                        <li>Zájem pomáhat hráčům a řešit tickety</li>
+                    </ul>
+                    <div class="recruit-note">
+                        <strong>A-T = Administrativní Tým</strong>
+                        <p>Po přijetí probíhá školení a zkušební doba 2 týdny.</p>
+                    </div>
+                </aside>
+
+                <form id="apply-form" class="apply-form" novalidate>
+                    <h3>Přihláška do A-T</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nick">Herní nick *</label>
+                            <input type="text" id="nick" name="nick" placeholder="např. CrazyKliker" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Věk *</label>
+                            <input type="number" id="age" name="age" placeholder="18" min="1" max="99" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Discord / E-mail *</label>
+                        <input type="text" id="email" name="email" placeholder="nick#0000 nebo e-mail" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="playtime">Jak dlouho hraješ na TripleFive RP?</label>
+                            <select id="playtime" name="playtime">
+                                <option value="Méně než měsíc">Méně než měsíc</option>
+                                <option value="1–3 měsíce">1–3 měsíce</option>
+                                <option value="3–6 měsíců">3–6 měsíců</option>
+                                <option value="Více než půl roku">Více než půl roku</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="activity">Tvoje denní aktivita</label>
+                            <select id="activity" name="activity">
+                                <option value="1–2 hodiny denně">1–2 hodiny denně</option>
+                                <option value="3–5 hodin denně">3–5 hodin denně</option>
+                                <option value="Více než 5 hodin denně">Více než 5 hodin denně</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="banhistory">Měl jsi někdy ban na TripleFive RP?</label>
+                        <div class="radio-row">
+                            <label class="radio-option"><input type="radio" name="banhistory" value="Ne" checked> Ne</label>
+                            <label class="radio-option"><input type="radio" name="banhistory" value="Ano"> Ano</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Zkušenosti s RP administrací</label>
+                        <textarea id="experience" name="experience" rows="3" placeholder="Předchozí servery, funkce, zkušenosti s ticket systémem, jak dlouho s adminem..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="offer">Co můžeš A-T týmu nabídnout? *</label>
+                        <textarea id="offer" name="offer" rows="3" placeholder="Tvoje silné stránky, nápady, kolik času věnuješ helpění hráčům..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Proč chceš být v A-T? *</label>
+                        <textarea id="skills" name="skills" rows="4" placeholder="Napiš alespoň 3 věty o sobě a své motivaci. Čím dříve jsi přišel(a) na server, kdy a jak..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="knownby">Kdo z A-T tě může doporučit?</label>
+                        <input type="text" id="knownby" name="knownby" placeholder="např. Rusty, Malacky, Fuxo... (nepovinné)">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="check-option">
+                            <input type="checkbox" id="agreement" required>
+                            Souhlasím s pravidly serveru a mlčenlivostí (další informace o členech A-T nebudu zveřejňovat) *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Odeslat přihlášku</button>
+                    <p id="form-msg" class="form-msg" hidden></p>
+                </form>
+            </div>
+
+            <div class="ateam-wrap">
+                <div class="section-head">
+                    <p class="section-eyebrow">Náš tým</p>
+                    <h3 class="section-title">Kdo je v A-T</h3>
+                    <p class="section-sub">Aktuální členové Administrativního Týmu.</p>
+                </div>
+                <div class="ateam-grid">
+                    <div class="member" data-rank="owner">
+                        <div class="member-avatar">RU</div>
+                        <h4 class="member-name">Rusty</h4>
+                        <span class="member-role">Owner</span>
+                    </div>
+                    <div class="member">
+                        <div class="member-avatar">MA</div>
+                        <h4 class="member-name">Malacky</h4>
+                        <span class="member-role">Management</span>
+                    </div>
+                    <div class="member">
+                        <div class="member-avatar">VL</div>
+                        <h4 class="member-name">vlcki</h4>
+                        <span class="member-role">Admin</span>
+                    </div>
+                    <div class="member">
+                        <div class="member-avatar">HA</div>
+                        <h4 class="member-name">Havlis</h4>
+                        <span class="member-role">Admin</span>
+                    </div>
+                    <div class="member" data-rank="head">
+                        <div class="member-avatar">FU</div>
+                        <h4 class="member-name">Fuxo</h4>
+                        <span class="member-role">Head Admin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="section">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-eyebrow">Internetový obchod</p>
+                <h2 class="section-title">VIP a Coiny</h2>
+                <p class="section-sub">
+                    Podpořte náš server a odemkněte si VIP benefity nebo si nakupte herní coiny.
+                </p>
+            </div>
+
+            <h3 class="shop-tab-title">💎 Coiny</h3>
+            <div class="shop-grid" id="coins-grid"></div>
+
+            <h3 class="shop-tab-title">🌟 VIP statusy</h3>
+            <div class="shop-grid" id="vip-grid"></div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="section section-dark">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-eyebrow">Kontakt</p>
+                <h2 class="section-title">Spojte se s námi</h2>
+            </div>
+            <div class="contact-grid">
+                <a class="contact-card" href="https://discord.gg/" target="_blank" rel="noopener">
+                    <span class="contact-icon">💬</span>
+                    <h3>Discord</h3>
+                    <p>discord.gg/triplefive</p>
+                    <span class="contact-badge">Aktivní 24/7</span>
+                </a>
+                <a class="contact-card" href="https://www.tiktok.com/" target="_blank" rel="noopener">
+                    <span class="contact-icon">📱</span>
+                    <h3>TikTok</h3>
+                    <p>@triplefive.rp</p>
+                    <span class="contact-badge">Klipy a eventy</span>
+                </a>
+                <a class="contact-card" href="mailto:nabory@triplefivenabory.cz">
+                    <span class="contact-icon">📧</span>
+                    <h3>E-mail</h3>
+                    <p>nabory@triplefivenabory.cz</p>
+                    <span class="contact-badge">Do 24 hodin</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> TripleFive RP. Všechna práva vyhrazena.</p>
+            <p class="footer-disclaimer">Nejsme spojeni se společností Rockstar Games. GTA V je ochranná známka společnosti Rockstar Games.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="purchase-modal" hidden>
+        <div class="modal-backdrop"></div>
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close" aria-label="Zavřít">✕</button>
+            <p class="modal-product" id="modal-product"></p>
+            <h3 class="modal-title">Nákup <span id="modal-name"></span></h3>
+            <p class="modal-text">
+                Platba zatím probíhá přes Discord. Přidej se k nám, napiš do ticketu typ balíčku
+                a naše příslušenství ti vytvoří objednávku.
+            </p>
+            <a href="https://discord.gg/" target="_blank" rel="noopener" class="btn btn-primary btn-block">Pokračovat na Discord</a>
+            <p class="modal-price" id="modal-price"></p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
